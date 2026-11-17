@@ -1,0 +1,13 @@
+# Contestações, revisão e liberação definitiva
+
+O RH autoriza individualmente o acesso à reunião em **Feedback de Desempenho → Liberação de Resultados**. Esse acesso permite a construção conjunta e a assinatura de ciência; não equivale à liberação definitiva. O botão de liberação definitiva verifica no servidor a consolidação, o documento formalizado com PDI válido, as duas assinaturas da mesma versão e a inexistência de contestação aberta. Todas as operações são auditadas.
+
+O funcionário pode solicitar revisão na tela do próprio feedback. O RH inicia análise, devolve para ajustes, indefere ou autoriza a revisão de uma avaliação de gestor concluída. Na opção deferida, o avaliador original acessa **Contestações**, revisa suas respostas e informa justificativa. Uma nova revisão da resposta é inserida; as respostas anteriores permanecem preservadas. O RH encerra a contestação após o envio. Se a nota consolidada mudou, é necessário criar uma nova versão do feedback/PDI e obter novamente as duas assinaturas antes da liberação definitiva. Durante a revisão do documento anteriormente liberado, sua liberação é revogada com auditoria.
+
+O PDF é gerado a partir do documento congelado e das assinaturas da versão atual, com a identificação da versão e hash. A assinatura registra ciência, sem pressupor concordância, e é uma assinatura interna por senha sem certificado digital. O PDF usa um mapa textual comparativo por competência; o radar interativo permanece na tela.
+
+As migrations 005 e 006 acrescentam as tabelas `evaluation_contestations`, `evaluation_contestation_history` e `evaluation_contestation_revisions`, além da coluna `feedback_access` em `cycle_participants`. Não alteram as migrations anteriores nem excluem registros. A aplicação não possui módulo de progressão; integrações futuras devem verificar a liberação definitiva e a inexistência de contestação aberta antes de usar o resultado.
+
+Para atualizar outra instalação: preservar o backup conforme os procedimentos institucionais, atualizar os arquivos, executar `npm ci`, `npm run migrate` e `npm run build`, e reiniciar o processo Node/PM2 existente. Não executar seed nem recriar o banco. A migration 005 foi aplicada em etapa anterior; 006 completa o fluxo de revisão.
+
+Validação de integração: `RUN_DEVELOPMENT_DB_TESTS=1 node --test tests/development-integration.test.js` (no PowerShell, definir a variável de ambiente separadamente). O teste usa transação com rollback para os registros de teste; sequências PostgreSQL podem avançar. A revisão exige acesso ativo do avaliador original; substituição de avaliador para revisão após desligamento ainda precisa de fluxo próprio.

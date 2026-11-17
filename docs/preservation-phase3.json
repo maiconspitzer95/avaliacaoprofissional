@@ -1,0 +1,120 @@
+{
+  "tables": {
+    "audit": {
+      "count": 4,
+      "hash": "48da152e97e38838c6ba68359b448a8b"
+    },
+    "competencies": {
+      "count": 0,
+      "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "competency_versions": {
+      "count": 0,
+      "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "cycle_participants": {
+      "count": 0,
+      "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "employees": {
+      "count": 0,
+      "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "evaluation_assignments": {
+      "count": 0,
+      "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "evaluation_cycles": {
+      "count": 0,
+      "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "evaluation_responses": {
+      "count": 0,
+      "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "evaluation_result_releases": {
+      "count": 0,
+      "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "evaluation_transfers": {
+      "count": 0,
+      "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "hierarchy_exceptions": {
+      "count": 0,
+      "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "imports": {
+      "count": 0,
+      "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "managers": {
+      "count": 0,
+      "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "nuclei": {
+      "count": 0,
+      "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "organizational_links": {
+      "count": 0,
+      "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "permissions": {
+      "count": 4,
+      "hash": "05e1610723dad6e31cb042a27615ce72"
+    },
+    "positions": {
+      "count": 0,
+      "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "question_versions": {
+      "count": 0,
+      "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "questionnaire_versions": {
+      "count": 0,
+      "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "questionnaires": {
+      "count": 0,
+      "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "questions": {
+      "count": 0,
+      "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "role_permissions": {
+      "count": 11,
+      "hash": "9ee831f4413c28e5a56f151cdf34ff6a"
+    },
+    "roles": {
+      "count": 5,
+      "hash": "92918055d58c1081484d5fe63db30b3d"
+    },
+    "sectors": {
+      "count": 0,
+      "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "sessions": {
+      "count": 1,
+      "hash": "69798e2da13d284ee1086d72b42149b6"
+    },
+    "settings": {
+      "count": 1,
+      "hash": "7d10c8169d7103556a57f0cd8da30173"
+    },
+    "supervisors": {
+      "count": 0,
+      "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "users": {
+      "count": 1,
+      "hash": "ad7d9370ba2f215f88f33b947f445c05"
+    }
+  },
+  "migrations": {
+    "001_foundation.sql": "f09b68fe6fddf7a748734f37a3fb89a585b91779f11c808a8550a14d40751d1d",
+    "002_evaluations.sql": "d1cb7422417d3431816ef80e510057fda35949fa8ea93c3489309d522f89fcac"
+  }
+}

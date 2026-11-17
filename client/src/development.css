@@ -1,0 +1,61 @@
+.development-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+.development textarea {
+  min-height: 110px;
+  resize: vertical;
+  width: 100%;
+  font: inherit;
+}
+.development fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+.development .action-card {
+  padding: 20px;
+  margin: 16px 0;
+  border: 1px solid #6587a355;
+  border-radius: 12px;
+}
+.development .action-card h3 {
+  margin-top: 0;
+}
+.development .muted {
+  color: #a9bed1;
+}
+.development .history {
+  max-height: 480px;
+  overflow: auto;
+}
+.development .history article {
+  border-bottom: 1px solid #6587a344;
+  padding: 14px 0;
+}
+.development pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 12px;
+}
+.development .inline-check {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 16px 0;
+}
+.development .inline-check input {
+  width: auto;
+}
+.development .notifications {
+  max-height: 300px;
+  overflow: auto;
+}
+.development .notifications li {
+  padding: 10px;
+}
+.development .signature-hash {
+  overflow-wrap: anywhere;
+}
